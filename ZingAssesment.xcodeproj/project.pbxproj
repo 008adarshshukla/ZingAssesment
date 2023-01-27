@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0213B2CE2983921100FBE7C5 /* OrderDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213B2CD2983921100FBE7C5 /* OrderDetailsModel.swift */; };
+		0213B2D12983927D00FBE7C5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0213B2D02983927D00FBE7C5 /* FirebaseFirestoreSwift */; };
+		0213B2D32983936C00FBE7C5 /* OrderDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213B2D22983936C00FBE7C5 /* OrderDetailsView.swift */; };
+		0213B2D52983947C00FBE7C5 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213B2D42983947C00FBE7C5 /* OrdersViewModel.swift */; };
 		021D475729836F5800D459E9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D475629836F5800D459E9 /* SignUp.swift */; };
 		02C5B414298351B30014D09D /* ZingAssesmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5B413298351B30014D09D /* ZingAssesmentApp.swift */; };
 		02C5B418298351B50014D09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C5B417298351B50014D09D /* Assets.xcassets */; };
@@ -20,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0213B2CD2983921100FBE7C5 /* OrderDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsModel.swift; sourceTree = "<group>"; };
+		0213B2D22983936C00FBE7C5 /* OrderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsView.swift; sourceTree = "<group>"; };
+		0213B2D42983947C00FBE7C5 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
 		021D475629836F5800D459E9 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		021D4758298373CD00D459E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		02C5B410298351B30014D09D /* ZingAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZingAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,18 +46,35 @@
 			files = (
 				02C5B427298360AF0014D09D /* FirebaseAuth in Frameworks */,
 				02C5B429298360AF0014D09D /* FirebaseFirestore in Frameworks */,
+				0213B2D12983927D00FBE7C5 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0213B2CC298391F700FBE7C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0213B2CD2983921100FBE7C5 /* OrderDetailsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0213B2CF2983927D00FBE7C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		02C5B407298351B30014D09D = {
 			isa = PBXGroup;
 			children = (
 				02C5B42329835CD40014D09D /* GoogleService-Info.plist */,
 				02C5B412298351B30014D09D /* ZingAssesment */,
 				02C5B411298351B30014D09D /* Products */,
+				0213B2CF2983927D00FBE7C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				02C5B413298351B30014D09D /* ZingAssesmentApp.swift */,
-				02CB8B3B298386C000F1FC0C /* Models */,
+				0213B2CC298391F700FBE7C5 /* Models */,
 				02CB8B3A298386AC00F1FC0C /* Views */,
 				02CB8B3C298386CC00F1FC0C /* ViewModels */,
 				021D4758298373CD00D459E9 /* Info.plist */,
@@ -97,22 +121,17 @@
 			isa = PBXGroup;
 			children = (
 				02C5B42C29836BD70014D09D /* HomeView.swift */,
+				0213B2D22983936C00FBE7C5 /* OrderDetailsView.swift */,
 				02CB8B392983868400F1FC0C /* AuthenticationViews */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		02CB8B3B298386C000F1FC0C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		02CB8B3C298386CC00F1FC0C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				02C5B42A298365440014D09D /* AuthViewModel.swift */,
+				0213B2D42983947C00FBE7C5 /* OrdersViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -136,6 +155,7 @@
 			packageProductDependencies = (
 				02C5B426298360AF0014D09D /* FirebaseAuth */,
 				02C5B428298360AF0014D09D /* FirebaseFirestore */,
+				0213B2D02983927D00FBE7C5 /* FirebaseFirestoreSwift */,
 			);
 			productName = ZingAssesment;
 			productReference = 02C5B410298351B30014D09D /* ZingAssesment.app */;
@@ -196,9 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				02C5B414298351B30014D09D /* ZingAssesmentApp.swift in Sources */,
+				0213B2CE2983921100FBE7C5 /* OrderDetailsModel.swift in Sources */,
 				02C5B42D29836BD70014D09D /* HomeView.swift in Sources */,
+				0213B2D52983947C00FBE7C5 /* OrdersViewModel.swift in Sources */,
 				02C5B422298358F40014D09D /* SignIn.swift in Sources */,
 				02C5B42B298365440014D09D /* AuthViewModel.swift in Sources */,
+				0213B2D32983936C00FBE7C5 /* OrderDetailsView.swift in Sources */,
 				021D475729836F5800D459E9 /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +434,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0213B2D02983927D00FBE7C5 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C5B425298360AF0014D09D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
 		02C5B426298360AF0014D09D /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 02C5B425298360AF0014D09D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

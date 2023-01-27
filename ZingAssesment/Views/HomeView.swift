@@ -14,7 +14,7 @@ struct HomeView: View {
     var body: some View {
         Group {
             if authViewModel.signedIn {
-                Text("hdjs")
+                OrderDetailsView()
             }
             else {
                 SignIn()
