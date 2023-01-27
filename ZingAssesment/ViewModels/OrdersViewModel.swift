@@ -12,7 +12,7 @@ class OrdersViewModel: ObservableObject {
     @Published var order: OrderDetailsModel = OrderDetailsModel(statusCode: 1)
     private var db = Firestore.firestore()
     private var listenerRegistration: ListenerRegistration?
-    @Published var timeRemaining = 200
+    @Published var timeRemaining = 900
     
     var color: Color {
         if order.statusCode == 1 {
@@ -37,7 +37,7 @@ class OrdersViewModel: ObservableObject {
             return "Accepted"
         }
         else if order.statusCode == 2 {
-            return "\(timeRemaining)"
+            return "\(timeRemaining / 60) mins left"
         }
         else if order.statusCode == 3 {
             return "Prepared"
