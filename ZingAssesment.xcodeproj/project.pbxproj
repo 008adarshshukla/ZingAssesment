@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021D475729836F5800D459E9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D475629836F5800D459E9 /* SignUp.swift */; };
 		02C5B414298351B30014D09D /* ZingAssesmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5B413298351B30014D09D /* ZingAssesmentApp.swift */; };
-		02C5B416298351B30014D09D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5B415298351B30014D09D /* ContentView.swift */; };
 		02C5B418298351B50014D09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C5B417298351B50014D09D /* Assets.xcassets */; };
 		02C5B41B298351B50014D09D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C5B41A298351B50014D09D /* Preview Assets.xcassets */; };
+		02C5B422298358F40014D09D /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5B421298358F40014D09D /* SignIn.swift */; };
+		02C5B42429835CD50014D09D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02C5B42329835CD40014D09D /* GoogleService-Info.plist */; };
+		02C5B427298360AF0014D09D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02C5B426298360AF0014D09D /* FirebaseAuth */; };
+		02C5B429298360AF0014D09D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 02C5B428298360AF0014D09D /* FirebaseFirestore */; };
+		02C5B42B298365440014D09D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5B42A298365440014D09D /* AuthViewModel.swift */; };
+		02C5B42D29836BD70014D09D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5B42C29836BD70014D09D /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021D475629836F5800D459E9 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		021D4758298373CD00D459E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		02C5B410298351B30014D09D /* ZingAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZingAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C5B413298351B30014D09D /* ZingAssesmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZingAssesmentApp.swift; sourceTree = "<group>"; };
-		02C5B415298351B30014D09D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02C5B417298351B50014D09D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02C5B41A298351B50014D09D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02C5B421298358F40014D09D /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		02C5B42329835CD40014D09D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		02C5B42A298365440014D09D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		02C5B42C29836BD70014D09D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C5B427298360AF0014D09D /* FirebaseAuth in Frameworks */,
+				02C5B429298360AF0014D09D /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +48,7 @@
 		02C5B407298351B30014D09D = {
 			isa = PBXGroup;
 			children = (
+				02C5B42329835CD40014D09D /* GoogleService-Info.plist */,
 				02C5B412298351B30014D09D /* ZingAssesment */,
 				02C5B411298351B30014D09D /* Products */,
 			);
@@ -52,7 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				02C5B413298351B30014D09D /* ZingAssesmentApp.swift */,
-				02C5B415298351B30014D09D /* ContentView.swift */,
+				02CB8B3B298386C000F1FC0C /* Models */,
+				02CB8B3A298386AC00F1FC0C /* Views */,
+				02CB8B3C298386CC00F1FC0C /* ViewModels */,
+				021D4758298373CD00D459E9 /* Info.plist */,
 				02C5B417298351B50014D09D /* Assets.xcassets */,
 				02C5B419298351B50014D09D /* Preview Content */,
 			);
@@ -65,6 +82,39 @@
 				02C5B41A298351B50014D09D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02CB8B392983868400F1FC0C /* AuthenticationViews */ = {
+			isa = PBXGroup;
+			children = (
+				02C5B421298358F40014D09D /* SignIn.swift */,
+				021D475629836F5800D459E9 /* SignUp.swift */,
+			);
+			path = AuthenticationViews;
+			sourceTree = "<group>";
+		};
+		02CB8B3A298386AC00F1FC0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02C5B42C29836BD70014D09D /* HomeView.swift */,
+				02CB8B392983868400F1FC0C /* AuthenticationViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02CB8B3B298386C000F1FC0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02CB8B3C298386CC00F1FC0C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				02C5B42A298365440014D09D /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +133,10 @@
 			dependencies = (
 			);
 			name = ZingAssesment;
+			packageProductDependencies = (
+				02C5B426298360AF0014D09D /* FirebaseAuth */,
+				02C5B428298360AF0014D09D /* FirebaseFirestore */,
+			);
 			productName = ZingAssesment;
 			productReference = 02C5B410298351B30014D09D /* ZingAssesment.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +165,9 @@
 				Base,
 			);
 			mainGroup = 02C5B407298351B30014D09D;
+			packageReferences = (
+				02C5B425298360AF0014D09D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 02C5B411298351B30014D09D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +184,7 @@
 			files = (
 				02C5B41B298351B50014D09D /* Preview Assets.xcassets in Resources */,
 				02C5B418298351B50014D09D /* Assets.xcassets in Resources */,
+				02C5B42429835CD50014D09D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02C5B416298351B30014D09D /* ContentView.swift in Sources */,
 				02C5B414298351B30014D09D /* ZingAssesmentApp.swift in Sources */,
+				02C5B42D29836BD70014D09D /* HomeView.swift in Sources */,
+				02C5B422298358F40014D09D /* SignIn.swift in Sources */,
+				02C5B42B298365440014D09D /* AuthViewModel.swift in Sources */,
+				021D475729836F5800D459E9 /* SignUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +330,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ZingAssesment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ZingAssesment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -297,7 +358,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ZingAssesment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = ZingAssesment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -337,6 +398,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02C5B425298360AF0014D09D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02C5B426298360AF0014D09D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C5B425298360AF0014D09D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		02C5B428298360AF0014D09D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02C5B425298360AF0014D09D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02C5B408298351B30014D09D /* Project object */;
 }
