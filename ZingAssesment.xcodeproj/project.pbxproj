@@ -11,6 +11,7 @@
 		0213B2D12983927D00FBE7C5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0213B2D02983927D00FBE7C5 /* FirebaseFirestoreSwift */; };
 		0213B2D32983936C00FBE7C5 /* OrderDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213B2D22983936C00FBE7C5 /* OrderDetailsView.swift */; };
 		0213B2D52983947C00FBE7C5 /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213B2D42983947C00FBE7C5 /* OrdersViewModel.swift */; };
+		0213B2D72983AA2C00FBE7C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0213B2D62983AA2C00FBE7C5 /* GoogleService-Info.plist */; };
 		021D475729836F5800D459E9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D475629836F5800D459E9 /* SignUp.swift */; };
 		02C5B414298351B30014D09D /* ZingAssesmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C5B413298351B30014D09D /* ZingAssesmentApp.swift */; };
 		02C5B418298351B50014D09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C5B417298351B50014D09D /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		0213B2CD2983921100FBE7C5 /* OrderDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsModel.swift; sourceTree = "<group>"; };
 		0213B2D22983936C00FBE7C5 /* OrderDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsView.swift; sourceTree = "<group>"; };
 		0213B2D42983947C00FBE7C5 /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
+		0213B2D62983AA2C00FBE7C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		021D475629836F5800D459E9 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		021D4758298373CD00D459E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		02C5B410298351B30014D09D /* ZingAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZingAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 		02C5B407298351B30014D09D = {
 			isa = PBXGroup;
 			children = (
+				0213B2D62983AA2C00FBE7C5 /* GoogleService-Info.plist */,
 				02C5B412298351B30014D09D /* ZingAssesment */,
 				02C5B411298351B30014D09D /* Products */,
 				0213B2CF2983927D00FBE7C5 /* Frameworks */,
@@ -201,6 +204,7 @@
 			files = (
 				02C5B41B298351B50014D09D /* Preview Assets.xcassets in Resources */,
 				02C5B418298351B50014D09D /* Assets.xcassets in Resources */,
+				0213B2D72983AA2C00FBE7C5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
